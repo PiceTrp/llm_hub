@@ -1,4 +1,7 @@
 *.DS_Store
+*-g1-*.json # GCP secrets
+serious-hold-453009-g1-eff08c861e11.json
+open_ai_key.txt
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
