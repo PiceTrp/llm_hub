@@ -51,14 +51,14 @@ for package_spec in required_packages:
         package_name = package_spec
         required_version = "Any"
         exact_version = False
-    
+
     # Normalize package name to match pkg_resources format
     norm_name = re.sub(r'[-_.]+', '-', package_name).lower()
-    
+
     # Check if package is installed
     if norm_name in installed_packages:
         installed_version = installed_packages[norm_name]
-        
+
         # Check version if exact version is required
         if exact_version and installed_version != required_version:
             status = "Version Mismatch"
@@ -70,7 +70,7 @@ for package_spec in required_packages:
         status = "Missing"
         missing.append(package_name)
         installed_version = "N/A"
-    
+
     print("{:<40} {:<15} {:<15} {:<10}".format(
         package_name, required_version, installed_version, status))
 

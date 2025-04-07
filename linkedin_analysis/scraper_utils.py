@@ -1,7 +1,7 @@
 
 
 async def fetch_and_process_page(
-        
+
 ):
     """
     Fetch and process a page to extract job descriptions.
